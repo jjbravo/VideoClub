@@ -1,22 +1,8 @@
 {
-  "name": "server Simple Node 4",
+  "name": "simple-node-server",
   "version": "1.0.0",
-  "description": "Server Simple node Java REST",
-  "keywords": [
-    "Node.js",
-    "application",
-    "express"
-  ],
-  "author": {
-    "name": "Yohon Bravo",
-    "email": "bravo2008@misena.edu.co"
-  },
-
-
-  "engines": {
-    "node": ">= 4.2.1",
-    "npm": ">= 1.0.0"
-  },
+  "description": "Servidor Simple node",
+  "main": "server.js",
   "dependencies": {
     "body-parser": "^1.14.1",
     "express": "^4.13.3",
@@ -26,7 +12,22 @@
   "devDependencies": {
     "debug": "^2.2.0"
   },
-  "bundleDependencies": [],
-  "private": true,
-  "main": "server.js"
+  "scripts": {
+    "test": "start",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jjbravo/SimpleServerNodejs.git"
+  },
+  "keywords": [
+    "node",
+    "server"
+  ],
+  "author": "Yohon Jairo Bravo Castro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jjbravo/SimpleServerNodejs/issues"
+  },
+  "homepage": "https://github.com/jjbravo/SimpleServerNodejs#readme"
 }
