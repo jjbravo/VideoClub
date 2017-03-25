@@ -1,10 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>NODE SERVER</title>
+	<meta charset="UTF-8">
+	<title>StartUp</title>
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
 </head>
-<body>
-<h2>BIENVENIDO</h2>
-<p>Reemplazame por tu proyecto</p>
+<body ng-app="StartUp">
+	
+	<navbar></navbar>
+	<div ui-view="" style="padding: 10px;"></div>
+	<footer></footer>
+	<script src="lib/angular/angular.min.js"></script>
+	<script src="lib/angular/angular-ui-router.min.js"></script>
+	<script src="lib/angular/angular-resource.min.js"></script>
+	<script src="lib/angular-messages/angular-messages.min.js"></script>
+
+	<script src="app/app.js" ></script>
+
+	<!-- MAIN COMPONENT -->
+	<script src="app/main/main.js" ></script>
+	<script src="app/main/main.controller.js" ></script>
+
+
+<!-- USUARIOS ROUTE - SERVICE -->
+	<script src="app/usuarios/usuarios.js" ></script>
+	<script src="app/usuarios/usuarios.service.js"></script>
+	
+<!-- USUARIOS LIST -->
+	<script src="app/usuarios/usuarios-list/usuarios-list.controller.js" ></script>
+	
+<!-- USUARIOS CREATE -->
+	<script src="app/usuarios/usuarios-create/usuarios-create.controller.js" ></script>
+
+<!-- USUARIOS VIEW -->	
+	<script src="app/usuarios/usuarios-view/usuarios-view.controller.js"></script>
+	<!-- NAVBAR -->
+	<script src="components/navbar/navbar.directive.js" ></script>
+	<!-- FOOTER -->
+	<script src="components/footer/footer.directive.js" ></script>
 </body>
 </html>

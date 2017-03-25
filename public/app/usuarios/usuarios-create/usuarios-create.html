@@ -1,0 +1,29 @@
+<h2>Create Usuarios</h2>
+
+<form name="userForm" ng-submit="vm.createUser()" >
+	<label >Ciudad</label>
+	<select ng-model="vm.usuario.idCiudad.id">
+		<option ng-value="1">Palmira</option>
+		<option ng-value="2">Cali</option>
+	</select>
+
+	<label for="">Documento</label>
+	<input type="text" ng-model="vm.usuario.numDocumento">
+
+	<label for="">Nombres</label>
+	<input type="text" ng-model="vm.usuario.nombres">
+
+	<label for="">Apellidos</label>
+	<input type="text" ng-model="vm.usuario.apellidos">
+
+	<label for="">Email</label>
+	<input type="text" ng-model="vm.usuario.email">
+
+	<label for="">Contraseña</label>
+	<input type="text" ng-model="vm.usuario.password">
+
+	<label for="">Genero</label>
+	<input type="text" ng-model="vm.usuario.sexo">
+
+<button type="submit" >Guardar</button>
+</form>

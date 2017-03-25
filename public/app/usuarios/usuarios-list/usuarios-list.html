@@ -1,0 +1,16 @@
+<h2>USUARIOS  LIST</h2>
+<table>
+	<thead></thead>
+	<tbody>
+		<tr ng-repeat="item in vm.usuarios">
+			<td>
+				<a ui-sref="usuarios-view({idUsuario:item.id})">{{ item.nombres }}</a>
+			</td>
+			<td>{{ item.apellidos}}</td>
+			<td>{{ item.email}}</td>
+			<td>{{ item.numDocumento}}</td>
+		</tr>
+	</tbody>
+</table>
+
+<a ui-sref="usuarios-create">Nuevo usuario</a>
